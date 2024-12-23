@@ -1,0 +1,12 @@
+{
+    "name": "last.fm-wrapped",
+    "version": "0.5",
+    "description": "An app that collects Wrapped-esque stats from one's Last.fm profile",
+    "author": "vulpeace",
+    "license": "GPL-3.0",
+    "main": "app.js",
+    "type": "module",
+    "dependencies": {
+        "dotenv": "^16.4.7"
+    }
+}
