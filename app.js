@@ -174,10 +174,6 @@ async function fetchStats(username) {
         return { "artists": topArtists, "songs": topSongs, "minutesListened": minutesListened,
             "tracksTotal": jsonLength, "strayMinutes": strayMinutes };
     } catch(error) {
-        if (error.message.retryAfter) {
-            await new Promise(resolve => setTimeout(resolve, error.message.retryAfter));
-            return fetchStats(username, 50);
-        }
         throw error;
     }
 }
